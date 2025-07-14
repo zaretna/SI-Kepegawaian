@@ -1,0 +1,129 @@
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --second-color: #b9b9b9;
+      --primary-color: #f4f4f4;
+      --black-color: #3b6b3d;
+    }
+
+    body {
+      background: url('../img/login.jpg') center center / cover no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    a {
+      color: var(--second-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+      overflow-y: auto;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .regist_container {
+      position: relative;
+      backdrop-filter: blur(10px);
+      width: 100%;
+      max-width: 850px;
+      border: 2px solid var(--black-color);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+      color: var(--black-color);
+    }
+
+    .regist_title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .regist_title span {
+      font-size: 36px;
+      font-weight: bold;
+      color: var(--black-color);
+      font-style: italic;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    td {
+      padding: 10px;
+      vertical-align: middle;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="tel"],
+    input[type="password"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+      border: 2px solid var(--black-color, #333);
+      background: transparent;
+      color: var(--black-color, #000);
+      font-size: 1rem;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    label {
+      font-weight: bold;
+      color: var(--black-color, #000);
+    }
+
+    .submit-row {
+      text-align: center;
+      padding-top: 10px;
+    }
+
+    button[type="submit"] {
+      background-color: var(--black-color);
+      color: #fff;
+      width: 100%;
+      height: 50px;
+      font-size: 17px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: 500;
+      border: 2px solid var(--black-color);
+      transition: 0.3s;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #283e28;
+    }
+
+    .signup {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .signup a {
+    font-weight: 700;
+    color: var(--black-color);
+}
+
+
